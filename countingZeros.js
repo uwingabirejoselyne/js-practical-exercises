@@ -1,12 +1,12 @@
-function count(n){
-let count = 0;
-
-for(let i =1; i<=n;i++){
-    if(i/10 ===0 || i%10 ===0){
-        count ++;
+function countZeros(n) {
+    let count = 0;
+  
+    for (let i = 1; i <= n; i++) {
+      count += String(i).split('0').length - 1;
     }
-    
-}
-return count;
-}
-console.log(count(50));
+  
+    return count;
+  }
+  
+  console.log(countZeros(200));
+  
