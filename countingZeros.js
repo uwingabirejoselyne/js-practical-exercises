@@ -1,12 +1,10 @@
 function countZeros(n) {
-    let count = 0;
-  
-    for (let i = 1; i <= n; i++) {
-      count += String(i).split('0').length - 1;
+    let arrCount =[];
+    for(let i=1;i<n;i++){
+      arrCount.push(i);
     }
-  
-    return count;
+      return arrCount.toString( ).split('').filter(arrCount =>arrCount ==0).length;
   }
   
-  console.log(countZeros(200));
+  console.log(countZeros(50));
   
