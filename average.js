@@ -20,3 +20,24 @@ const arrayDiff =(a,b)=>{
 
 }
 console.log(arrayDiff([3, 4], [3]));
+
+const duplicationCount = (str)=>{
+ const convert = text.toLowerCase()
+ const count ={}
+ for(let i of convert){
+    if(i in count){
+        count[i] +=1
+    }
+    else{
+        count[i] =1 
+    }
+ }
+ let occurence = 0
+ for(let b in count){
+    if(count[b]>1)
+    occurence +=1
+ }
+ return occurence
+}
+
+console.log(duplicationCount('josee'));
